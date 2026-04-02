@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; nb=json.load\\(open\\('fake_news_classifier.ipynb'\\)\\); [print\\(i, c['id']\\) for i,c in enumerate\\(nb['cells']\\)]\")",
+      "Bash(python -c ':*)",
+      "Bash(python rebuild_notebook.py)",
+      "Bash(rm rebuild_notebook.py)"
+    ]
+  }
+}
